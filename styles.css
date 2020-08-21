@@ -212,7 +212,7 @@ h1 {
 .pick2Div {
   display: flex;
   flex-direction: column;
-  flex: 100px;
+  flex: 200px;
   height: 200px;
   text-align: center;
 }

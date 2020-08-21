@@ -1,0 +1,384 @@
+body {
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  padding: 20px;
+}
+
+.bodyStyle>*:not(.rulesImage) {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: solid 2px hsl(217, 16%, 45%);
+  border-radius: 25px;
+  width: 50%;
+  margin: 5% auto;
+}
+
+.scoreCard {
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.scoreText {
+  font-size: 1.5rem;
+  padding: 0 20px;
+  margin-top: 0;
+  font-weight: 600;
+  color: hsl(229, 64%, 46%);
+}
+
+.scoreValue {
+  color: hsl(229, 25%, 31%);
+  font-size: 3.5rem;
+  padding-top: 10px;
+}
+
+/*****************pentagon and icons styling************/
+.pentagonFrame {
+  background: url("images/bg-pentagon.svg") no-repeat center;
+  background-size: contain;
+  position: relative;
+  margin: 100px auto;
+  height: 300px;
+  width: 300px;
+}
+
+.icon {
+  position: absolute;
+  border: solid 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.icon1 {
+  background: white url("images/icon-paper.svg") no-repeat center;
+  border-color: hsl(230, 89%, 65%);
+  top: 50px;
+  left: 230px;
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(230, 89%, 62%);
+}
+
+.icon01 {
+  border: solid 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white url("images/icon-paper.svg") no-repeat center;
+  border-color: hsl(230, 89%, 65%);
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(230, 89%, 62%);
+  align-items: center;
+  margin: 10px auto;
+}
+
+.icon2 {
+  background: hsl(0, 0%, 100%) url("images/icon-rock.svg") no-repeat center;
+  border-color: hsl(349, 70%, 56%);
+  left: 180px;
+  top: 230px;
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(349, 71%, 52%);
+}
+
+.icon02 {
+  border: solid 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: hsl(0, 0%, 100%) url("images/icon-rock.svg") no-repeat center;
+  border-color: hsl(349, 70%, 56%);
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(349, 71%, 52%);
+  align-items: center;
+  margin: 10px auto;
+}
+
+.icon3 {
+  background: hsl(0, 0%, 100%) url("images/icon-spock.svg") no-repeat center;
+  border-color: hsl(189, 58%, 57%);
+  top: 50px;
+  left: -50px;
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(189, 59%, 53%);
+}
+
+.icon03 {
+  border: solid 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  align-items: center;
+  margin: 10px auto;
+  background: hsl(0, 0%, 100%) url("images/icon-spock.svg") no-repeat center;
+  border-color: hsl(189, 58%, 57%);
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(189, 59%, 53%);
+}
+
+.icon4 {
+  background: hsl(0, 0%, 100%) url("images/icon-scissors.svg") no-repeat center;
+  border-color: hsl(40, 84%, 53%);
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(39, 89%, 49%);
+  left: 90px;
+  top: -50px;
+}
+
+.icon04 {
+  border: solid 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: hsl(0, 0%, 100%) url("images/icon-scissors.svg") no-repeat center;
+  border-color: hsl(40, 84%, 53%);
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(39, 89%, 49%);
+  align-items: center;
+  margin: 10px auto;
+}
+
+.icon5 {
+  background: hsl(0, 0%, 100%) url("images/icon-lizard.svg") no-repeat center;
+  top: 230px;
+  border-color: hsl(261, 72%, 63%);
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(261, 73%, 60%);
+}
+
+.icon05 {
+  border: solid 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: hsl(0, 0%, 100%) url("images/icon-lizard.svg") no-repeat center;
+  border-color: hsl(261, 72%, 63%);
+  box-shadow: inset 0 4px 3px hsl(220, 5%, 51%),
+    0 5px 1px hsl(261, 73%, 60%);
+  align-items: center;
+  margin: 10px auto;
+}
+
+.playAgainButton,
+.rulesButton {
+  padding: 10px 20px;
+  border: solid 2px hsl(217, 16%, 45%);
+  border-radius: 5px;
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover,
+.icon4:hover, .icon5:hover, .rulesButton:hover,
+.playAgainButton:hover {
+  background-color: hsl(217, 16%, 45%);
+}
+
+/*************************my selection***************************/
+.resultDiv {
+  position: relative;
+  display: none;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.resultDiv2 {
+  display: none;
+}
+
+.pick1Div,
+.pick2Div {
+  display: flex;
+  flex-direction: column;
+  flex: 100px;
+  height: 200px;
+  text-align: center;
+}
+
+.myPick {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+  border-radius: 50%;
+  border: solid 15px;
+}
+
+.oppPick {
+  position: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background-color: hsl(237, 49%, 15%);
+}
+
+.winOrLose {
+  display: none;
+  text-align: center;
+}
+
+/**************************rules styling***********************/
+.rulesImage {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  background: hsl(0, 0%, 100%) url("images/image-rules-bonus.svg") no-repeat center;
+  margin-left: -150px;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-size: 80%;
+  z-index: 1;
+  opacity: 1;
+}
+
+.rulesCancelButton {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(220, 5%, 51%);
+  float: right;
+  padding: 5px;
+  background: none;
+  border: none;
+}
+
+.rulesCancelButton:hover {
+  background-color: hsl(214, 47%, 23%);
+}
+
+h3 {
+  color: hsl(214, 47%, 23%);
+  margin: 0px;
+  border-radius: 10px;
+  float: left;
+}
+
+.rulesButton {
+  margin-top: 20px;
+  float: right;
+}
+
+/*****************footer styling************************/
+.attribution {
+  text-align: center;
+  clear: both;
+}
+
+.footerText {
+  font-weight: 700;
+  color: hsl(229, 25%, 31%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@keyframes icon01 {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(255, 255, 255, 0.2),
+      0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 5rem rgba(255, 255, 255, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 4rem rgba(255, 255, 255, 0.2),
+      0 0 0 8rem rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes icon02 {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(255, 255, 255, 0.2),
+      0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 5rem rgba(255, 255, 255, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 4rem rgba(255, 255, 255, 0.2),
+      0 0 0 8rem rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes icon03 {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(255, 255, 255, 0.2),
+      0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 5rem rgba(255, 255, 255, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 4rem rgba(255, 255, 255, 0.2),
+      0 0 0 8rem rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes icon04 {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(255, 255, 255, 0.2),
+      0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 5rem rgba(255, 255, 255, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 4rem rgba(255, 255, 255, 0.2),
+      0 0 0 8rem rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes icon05 {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(255, 255, 255, 0.2),
+      0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 5rem rgba(255, 255, 255, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2),
+      0 0 0 4rem rgba(255, 255, 255, 0.2),
+      0 0 0 8rem rgba(255, 255, 255, 0);
+  }
+}
+
+/*********************Responsivity**********************/
+@media screen and (max-width: 800px) {
+  .headerDiv {
+    width: 90%;
+  }
+
+  .resultDiv {
+    width: 95%;
+  }
+
+  .winOrLose:nth-of-type(2) {
+    flex-basis: 100%;
+    order: 1;
+  }
+}
